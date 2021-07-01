@@ -9,7 +9,8 @@ namespace Basic_Functional_Problems
     /// UC4 - To find the nth harmonic number
     /// UC5 - To find the prime factors of a number
     /// UC6 -  To find the quotient and remainder 
-    /// UC7 -  t swap the two numbers
+    /// UC7 -  to swap the two numbers
+    /// UC8 - To find the number is even or odd
     /// </summary>
     class Program
     {
@@ -26,6 +27,7 @@ namespace Basic_Functional_Problems
                 // '5' -  is used to find prime factors
                 // '6' -  is used to find quotient and remainder
                 // '7' - is used to swap the two numbers
+                // '8' - is used to find the number is odd or even
                 int option = int.Parse(Console.ReadLine());
                 switch (option)
                 {
@@ -74,6 +76,12 @@ namespace Basic_Functional_Problems
                         Console.WriteLine("Enter the second number");
                         int g = Convert.ToInt32(Console.ReadLine());
                         Program.swap(f,g);
+                        break;
+
+                    case 8:
+                        Console.WriteLine("Enter the number");
+                        int j = Convert.ToInt32(Console.ReadLine());
+                        Program.evenodd(j);
                         break;
 
                     default:
@@ -175,6 +183,20 @@ namespace Basic_Functional_Problems
             g = f / g;
             f = f / g;
             Console.WriteLine("After swapping the numbers are {0} , {1}",f,g);
+        }
+
+        // Function to find the given number is even or odd
+
+        public static void evenodd(int j)
+        {
+            if(j%2==0)
+            {
+                Console.WriteLine("NUmber is even");
+            }
+            else
+            {
+                Console.WriteLine("Number is odd");
+            }
         }
     }
 }
