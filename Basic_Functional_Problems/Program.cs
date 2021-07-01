@@ -4,6 +4,7 @@ namespace Basic_Functional_Problems
 {
     /// <summary>
     /// UC1 - To find the percentage of head VS tail
+    /// UC2 -  To find the year is leap year or not
     /// </summary>
     class Program
     {
@@ -14,6 +15,7 @@ namespace Basic_Functional_Problems
             while (true)
             {
                 // '1' - is used to find the percentage of head VS tail
+                // '2' - is used to find leap year or not
                 int option = int.Parse(Console.ReadLine());
                 switch (option)
                 {
@@ -24,6 +26,12 @@ namespace Basic_Functional_Problems
                         break;
 
                     case 2:
+                        Console.WriteLine("Enter the year");
+                        int year = int.Parse(Console.ReadLine());
+                        Program.Leapyear(year);
+                        break;
+
+                    case 3:
                         return;
 
                     default:
@@ -56,5 +64,18 @@ namespace Basic_Functional_Problems
             Console.WriteLine("Tail percentage {0}",tailpercent);
             Console.WriteLine("Head percentage {0}",headpercent);
        }
+        
+        // Function to find the leap year or not 
+        public static void Leapyear(int year)
+        {
+            if((year % 4==0) && (year % 100 !=0) || (year % 400 ==0))
+            {
+                Console.WriteLine("{0} is Leap Year",year);
+            }
+            else
+            {
+                Console.WriteLine("{0} is not Leap Year",year);
+            }
+        }
     }
 }
