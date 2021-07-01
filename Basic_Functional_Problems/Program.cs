@@ -7,6 +7,7 @@ namespace Basic_Functional_Problems
     /// UC2 -  To find the year is leap year or not
     /// UC3 -  To find the power of 2
     /// UC4 - To find the nth harmonic number
+    /// UC5 - To find the prime factors of a number
     /// </summary>
     class Program
     {
@@ -44,6 +45,13 @@ namespace Basic_Functional_Problems
                         int m = Convert.ToInt32(Console.ReadLine());
                         Program.HarmonicNumber(m);
                         break;
+
+                    case 5:
+                        Console.WriteLine("Enter the integer");
+                        int prime = Convert.ToInt32(Console.ReadLine());
+                        Program.Primefactors(prime);
+                        break;
+
                     default:
                         break;
 
@@ -111,6 +119,19 @@ namespace Basic_Functional_Problems
                 s = s + 1 / (float)i;
             }
             Console.Write("nth number {0}", s);
+        }
+
+        // Function to compute prime factors of a number
+
+        public static void Primefactors(int prime)
+        {
+            for(int i=1;i<=prime;i++)
+            {
+                if(prime%i==0)
+                {
+                    Console.WriteLine("Factors are {0} ",i);
+                }
+            }
         }
     }
 }
