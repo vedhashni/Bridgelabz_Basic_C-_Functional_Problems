@@ -11,6 +11,7 @@ namespace Basic_Functional_Problems
     /// UC6 -  To find the quotient and remainder 
     /// UC7 -  to swap the two numbers
     /// UC8 - To find the number is even or odd
+    /// UC9 -  To find the given alphabet is vowel or consonant
     /// </summary>
     class Program
     {
@@ -28,6 +29,7 @@ namespace Basic_Functional_Problems
                 // '6' -  is used to find quotient and remainder
                 // '7' - is used to swap the two numbers
                 // '8' - is used to find the number is odd or even
+                // '9' - is used to find the alphabet is vowel or consonant
                 int option = int.Parse(Console.ReadLine());
                 switch (option)
                 {
@@ -82,6 +84,12 @@ namespace Basic_Functional_Problems
                         Console.WriteLine("Enter the number");
                         int j = Convert.ToInt32(Console.ReadLine());
                         Program.evenodd(j);
+                        break;
+
+                   case 9:
+                        Console.WriteLine("Enter the character");
+                        char l = Convert.ToChar(Console.ReadLine());
+                        Program.vowcons(l);
                         break;
 
                     default:
@@ -196,6 +204,19 @@ namespace Basic_Functional_Problems
             else
             {
                 Console.WriteLine("Number is odd");
+            }
+        }
+
+        // function to find vowel or consonant
+        public static void vowcons(char l)
+        {
+            if(l=='a'||l=='e'||l=='i'||l=='o'||l=='u'||l=='A'||l=='E'||l=='I'||l=='O'||l=='U')
+            {
+                Console.WriteLine("It is Vowel");
+            }
+            else if ((l>='a' && l<='z') || (l>='A' && l<='Z'))
+            {
+                Console.WriteLine("Consonant");
             }
         }
     }
