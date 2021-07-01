@@ -8,6 +8,7 @@ namespace Basic_Functional_Problems
     /// UC3 -  To find the power of 2
     /// UC4 - To find the nth harmonic number
     /// UC5 - To find the prime factors of a number
+    /// UC6 -  To find the quotient and remainder 
     /// </summary>
     class Program
     {
@@ -19,6 +20,10 @@ namespace Basic_Functional_Problems
             {
                 // '1' - is used to find the percentage of head VS tail
                 // '2' - is used to find leap year or not
+                // '3' -  is used to find power of 2
+                // '4' - is used to find nth harmonic number
+                // '5' -  is used to find prime factors
+                // '6' -  is used to find quotient and remainder
                 int option = int.Parse(Console.ReadLine());
                 switch (option)
                 {
@@ -50,6 +55,15 @@ namespace Basic_Functional_Problems
                         Console.WriteLine("Enter the integer");
                         int prime = Convert.ToInt32(Console.ReadLine());
                         Program.Primefactors(prime);
+                        break;
+
+                    case 6:
+
+                        Console.WriteLine("Enter the dividend");
+                        int a = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter the divisor");
+                        int b = Convert.ToInt32(Console.ReadLine());
+                        Program.quorem(a,b);
                         break;
 
                     default:
@@ -132,6 +146,15 @@ namespace Basic_Functional_Problems
                     Console.WriteLine("Factors are {0} ",i);
                 }
             }
+        }
+
+        //  Fuction to compute quotient and remainder
+        public static void quorem(int a,int b)
+        {
+            int quotient = a / b;
+            int remainder = a % b;
+            Console.WriteLine("Quotient is {0}",quotient);
+            Console.WriteLine("Remainder is {0}",remainder);
         }
     }
 }
