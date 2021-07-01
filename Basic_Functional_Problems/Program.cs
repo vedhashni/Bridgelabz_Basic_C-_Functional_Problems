@@ -9,6 +9,7 @@ namespace Basic_Functional_Problems
     /// UC4 - To find the nth harmonic number
     /// UC5 - To find the prime factors of a number
     /// UC6 -  To find the quotient and remainder 
+    /// UC7 -  t swap the two numbers
     /// </summary>
     class Program
     {
@@ -24,6 +25,7 @@ namespace Basic_Functional_Problems
                 // '4' - is used to find nth harmonic number
                 // '5' -  is used to find prime factors
                 // '6' -  is used to find quotient and remainder
+                // '7' - is used to swap the two numbers
                 int option = int.Parse(Console.ReadLine());
                 switch (option)
                 {
@@ -64,6 +66,14 @@ namespace Basic_Functional_Problems
                         Console.WriteLine("Enter the divisor");
                         int b = Convert.ToInt32(Console.ReadLine());
                         Program.quorem(a,b);
+                        break;
+
+                    case 7:
+                        Console.WriteLine("Enter the first number");
+                        int f = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter the second number");
+                        int g = Convert.ToInt32(Console.ReadLine());
+                        Program.swap(f,g);
                         break;
 
                     default:
@@ -155,6 +165,16 @@ namespace Basic_Functional_Problems
             int remainder = a % b;
             Console.WriteLine("Quotient is {0}",quotient);
             Console.WriteLine("Remainder is {0}",remainder);
+        }
+
+        // Function used to swap two numbers
+
+        public static void swap(int f,int g)
+        {
+            f = f * g;
+            g = f / g;
+            f = f / g;
+            Console.WriteLine("After swapping the numbers are {0} , {1}",f,g);
         }
     }
 }
