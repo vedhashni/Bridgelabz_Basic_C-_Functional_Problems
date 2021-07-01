@@ -6,6 +6,7 @@ namespace Basic_Functional_Problems
     /// UC1 - To find the percentage of head VS tail
     /// UC2 -  To find the year is leap year or not
     /// UC3 -  To find the power of 2
+    /// UC4 - To find the nth harmonic number
     /// </summary>
     class Program
     {
@@ -39,8 +40,10 @@ namespace Basic_Functional_Problems
                         break;
 
                     case 4:
-                        return;
-
+                        Console.WriteLine("Enter the number");
+                        int m = Convert.ToInt32(Console.ReadLine());
+                        Program.HarmonicNumber(m);
+                        break;
                     default:
                         break;
 
@@ -95,6 +98,19 @@ namespace Basic_Functional_Problems
                 Console.Write(Math.Pow(2, i) + " ");
             }
             Console.WriteLine("]");
+        }
+
+        // Function to find nth harmonic number
+        public static void HarmonicNumber(int m)
+        {
+            int i;
+            double s = 0.0;
+            for(i=1;i<=m;i++)
+            {
+                Console.Write("1/{0} + ", i);
+                s = s + 1 / (float)i;
+            }
+            Console.Write("nth number {0}", s);
         }
     }
 }
