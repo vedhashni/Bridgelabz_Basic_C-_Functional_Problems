@@ -5,6 +5,7 @@ namespace Basic_Functional_Problems
     /// <summary>
     /// UC1 - To find the percentage of head VS tail
     /// UC2 -  To find the year is leap year or not
+    /// UC3 -  To find the power of 2
     /// </summary>
     class Program
     {
@@ -32,6 +33,12 @@ namespace Basic_Functional_Problems
                         break;
 
                     case 3:
+                        Console.WriteLine("Enter the number");
+                        int n = Convert.ToInt32(Console.ReadLine());
+                        Program.Powerof2(n);
+                        break;
+
+                    case 4:
                         return;
 
                     default:
@@ -76,6 +83,18 @@ namespace Basic_Functional_Problems
             {
                 Console.WriteLine("{0} is not Leap Year",year);
             }
+        }
+
+        // Function to find te power of 2
+
+        public static void Powerof2(int n)
+        {
+            Console.Write("[");
+            for(int i=1;i<=n;i++)
+            {
+                Console.Write(Math.Pow(2, i) + " ");
+            }
+            Console.WriteLine("]");
         }
     }
 }
