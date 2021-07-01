@@ -1,0 +1,13 @@
+C:\Users\ven\source\repos\Basic_Functional_Problems\Basic_Functional_Problems\bin\Debug\netcoreapp3.1\Basic_Functional_Problems.exe
+C:\Users\ven\source\repos\Basic_Functional_Problems\Basic_Functional_Problems\bin\Debug\netcoreapp3.1\Basic_Functional_Problems.deps.json
+C:\Users\ven\source\repos\Basic_Functional_Problems\Basic_Functional_Problems\bin\Debug\netcoreapp3.1\Basic_Functional_Problems.runtimeconfig.json
+C:\Users\ven\source\repos\Basic_Functional_Problems\Basic_Functional_Problems\bin\Debug\netcoreapp3.1\Basic_Functional_Problems.runtimeconfig.dev.json
+C:\Users\ven\source\repos\Basic_Functional_Problems\Basic_Functional_Problems\bin\Debug\netcoreapp3.1\Basic_Functional_Problems.dll
+C:\Users\ven\source\repos\Basic_Functional_Problems\Basic_Functional_Problems\bin\Debug\netcoreapp3.1\Basic_Functional_Problems.pdb
+C:\Users\ven\source\repos\Basic_Functional_Problems\Basic_Functional_Problems\obj\Debug\netcoreapp3.1\Basic_Functional_Problems.csproj.AssemblyReference.cache
+C:\Users\ven\source\repos\Basic_Functional_Problems\Basic_Functional_Problems\obj\Debug\netcoreapp3.1\Basic_Functional_Problems.AssemblyInfoInputs.cache
+C:\Users\ven\source\repos\Basic_Functional_Problems\Basic_Functional_Problems\obj\Debug\netcoreapp3.1\Basic_Functional_Problems.AssemblyInfo.cs
+C:\Users\ven\source\repos\Basic_Functional_Problems\Basic_Functional_Problems\obj\Debug\netcoreapp3.1\Basic_Functional_Problems.csproj.CoreCompileInputs.cache
+C:\Users\ven\source\repos\Basic_Functional_Problems\Basic_Functional_Problems\obj\Debug\netcoreapp3.1\Basic_Functional_Problems.dll
+C:\Users\ven\source\repos\Basic_Functional_Problems\Basic_Functional_Problems\obj\Debug\netcoreapp3.1\Basic_Functional_Problems.pdb
+C:\Users\ven\source\repos\Basic_Functional_Problems\Basic_Functional_Problems\obj\Debug\netcoreapp3.1\Basic_Functional_Problems.genruntimeconfig.cache
