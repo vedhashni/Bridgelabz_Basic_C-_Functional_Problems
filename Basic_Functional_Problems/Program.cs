@@ -12,6 +12,7 @@ namespace Basic_Functional_Problems
     /// UC7 -  to swap the two numbers
     /// UC8 - To find the number is even or odd
     /// UC9 -  To find the given alphabet is vowel or consonant
+    /// UC10 - To find third largest number
     /// </summary>
     class Program
     {
@@ -30,6 +31,8 @@ namespace Basic_Functional_Problems
                 // '7' - is used to swap the two numbers
                 // '8' - is used to find the number is odd or even
                 // '9' - is used to find the alphabet is vowel or consonant
+                // '10' - is used to find the third largest number
+                // '11' - for exit
                 int option = int.Parse(Console.ReadLine());
                 switch (option)
                 {
@@ -91,6 +94,19 @@ namespace Basic_Functional_Problems
                         char l = Convert.ToChar(Console.ReadLine());
                         Program.vowcons(l);
                         break;
+
+                    case 10:
+                        Console.WriteLine("Enter the first number");
+                        int x = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter the second number");
+                        int y = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter the third number");
+                        int z = Convert.ToInt32(Console.ReadLine());
+                        Program.Largest(x,y,z);
+                        break;
+
+                    case 11:
+                        return;
 
                     default:
                         break;
@@ -217,6 +233,31 @@ namespace Basic_Functional_Problems
             else if ((l>='a' && l<='z') || (l>='A' && l<='Z'))
             {
                 Console.WriteLine("Consonant");
+            }
+        }
+
+        // function to find third largest number
+
+        public static void Largest(int x, int y, int z)
+        {
+            if (x > y)
+            {
+                if (x > z)
+                {
+                    Console.WriteLine("largest one is {0}", x);
+                }
+                else
+                {
+                    Console.WriteLine("largest one is {0}", z);
+                }
+            }
+            else if (y > z)
+            {
+                Console.WriteLine("largest one is {0}", y);
+            }
+            else
+            {
+                Console.WriteLine("largest one is {0}", z);
             }
         }
     }
